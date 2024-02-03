@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding list</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>ADD Items</h2>
+        <form class="inputvalue">
+            <input type="text" placeholder="Enter Items to add in list" class="inputtext" required> 
+            
+            
+            <button class="Addbtn">Add</button>
+        </form>
+
+        <div class="list">
+            <ul class="addedlist">
+                
+            </ul>
+            
+        </div>
+    </div>
+</body>
+
+<script>
+const input = document.querySelector(".inputtext");
+const btn = document.querySelector(".Addbtn");
+const addedlist = document.querySelector(".addedlist");
+    console.log(input.value);
+    function addlist(){
+        if (input.value == false) {
+            alert("Enter Correct details")
+            console.log(input.value);
+        }
+        else{
+            console.log("btn clicked");
+        const newItem1 = document.createElement('li');
+        newItem1.textContent = input.value;
+        addedlist.appendChild(newItem1);
+        console.log(newItem1);
+        }
+        
+       
+    }
+ 
+
+
+btn.addEventListener("click", ()=>{
+  addlist(input.value);
+  event.preventDefault();
+})
+</script>
+
+
+
+</html>

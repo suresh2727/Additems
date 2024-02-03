@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+html,body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container{
+    background-color: lightblue;
+    height: 400px;
+    width: 400px;
+    padding: 20px 30px;
+    margin: 20px 30px;
+    border-radius: 10px;
+}
+
+.container h2{
+    text-align: center;
+    color: rgb(124, 93, 165);
+}
+
+.inputvalue{
+    padding: 20px 0;
+}
+
+.inputtext {
+    border:none;
+    outline: none;
+    width: 80%;
+    /* padding: 15px 5px; */
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 10px;
+    background-color: rgba(92, 88, 88, 0.484);
+    font-size: 14px;
+    padding-left: 12px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.674);
+}
+
+
+.inputtext::placeholder{
+    color: black;
+    font-size: 14px;
+    padding-left: 7px;
+}
+
+.Addbtn{
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-left: 1px;
+
+}
+

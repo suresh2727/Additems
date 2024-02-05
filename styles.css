@@ -19,7 +19,7 @@ html,body{
     background-color: lightblue;
     height: 400px;
     width: 400px;
-    padding: 20px 30px;
+    padding: 20px 20px;
     margin: 20px 30px;
     border-radius: 10px;
 }
@@ -48,6 +48,10 @@ html,body{
     color: rgba(255, 255, 255, 0.674);
 }
 
+.inputtext:focus{
+    outline: 2px solid rgb(124, 93, 165);
+}
+
 
 .inputtext::placeholder{
     color: black;
@@ -64,3 +68,7 @@ html,body{
 
 }
 
+
+.Addbtn:hover{
+    outline: 2px rgb(124, 93, 165) solid;
+}
